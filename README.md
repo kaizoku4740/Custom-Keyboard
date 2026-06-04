@@ -1,28 +1,26 @@
 # Custom-Keyboard
 A 60% keyboard that has a custom pcb, switches, housing, as well as a mini oled screen. It will connect via bluetoooth and be usb c chargeable and it will also feature a fingerprint sensor as the uniqueness.
+For the visuals/design i wanna make a cyberpunk aestetic keyboard because i really enjoyed the game and the anime so ill try to go with a yellow purple green aestetic with a black case at the end
 
 
 ## Bill of Materials (BOM)
 
-| Part | Quantity | Estimated Cost | Purpose / Notes |
-|---|---:|---:|---|
-| [Seeed Studio XIAO nRF52840]([url](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html?srsltid=AfmBOoq50QceSaVoQTKIPUsRNgMgtCfaiQ5tjvj0wDCwD--I3kmugIlV)) | 1 | $9.49 | Bluetooth + USB-C microcontroller | 
-| AS608 Fingerprint Sensor | 1 | $6–15 | Biometric authentication / fingerprint login |
-| MX-Style Mechanical Switches | 61 | $18–35 | Main keyboard switches |
-| White Blank DSA Keycaps | 1 set | $20–30 | Keycaps for 60% layout |
-| Through-Hole 1N4148 Diodes | 61–100 | $5 | One diode per key for matrix scanning |
-| EC11 Rotary Encoder | 1 | $2–6 | Volume/menu control |
-| Encoder Knob | 1 | $2–5 | Knob for rotary encoder |
-| 0.91 inch OLED Display | 1 | $4–8 | Shows layer, Bluetooth, and fingerprint status |
-| SK6812 MINI-E RGB LEDs | 61 | $6–10 | Per-key RGB lighting |
-| Stabilizers | 1 kit | $8–15 | For larger keys like spacebar, enter, shift, and backspace |
-| 3.7V LiPo Battery | 1 | $8–15 | Wireless power |
-| JST Battery Connector | 1 | $1–3 | Battery connection |
-| Power Switch | 1 | $1–3 | Turns wireless mode on/off |
-| M3x16mm Screws | 8 | $3–6 | Case assembly |
-| M3x5x4mm Heat-Set Inserts | 8 | $3–6 | Threaded inserts for 3D printed case |
-| Rubber Feet | 4 | $2–4 | Prevents keyboard from sliding |
-| Custom PCB | 1 order | $20–40 | Keyboard PCB designed in KiCad |
-| 3D Printed Case | 1 | $10–25 | Custom top/bottom enclosure |
-
-**Estimated Total:** $130–190
+| Part | Quantity | Estimated Cost | Link | Purpose / Notes |
+|---|---:|---:|---|---|
+| Seeed Studio XIAO nRF52840 | 1 | $9.49 | https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html | Bluetooth + USB-C microcontroller |
+| AS608 Fingerprint Sensor | 1 | $7.21 | https://www.aliexpress.us/item/3256805197550628.html?src=google&gatewayAdapt=glo2usa | Sensor for fingerprint login |
+| MX-Style Mechanical Switches | 70 | $15.21 | https://www.aliexpress.us/item/3256802192387196.html?gatewayAdapt=glo2usa4itemAdapt | dust-proof green keyboard switches |
+| Cyberpunk Keycap Set | 1 set | $20–27 | https://www.etsy.com/listing/4357397427/cyberpunk-keycap-set-neon-aesthetic?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=cyberpunk+edgerunners+keycaps+set&ref=sr_gallery-1-17&sr_prefetch=1&pf_from=market&pro=1&frs=1&content_source=b064fe2a-2457-4b40-b70b-c0272e91840c%253ALTa5285de8941e1fc9f69cc2ab46b033a835b7e6ee&organic_search_click=1&logging_key=b064fe2a-2457-4b40-b70b-c0272e91840c%3ALTa5285de8941e1fc9f69cc2ab46b033a835b7e6ee | Cyberpunk Keycaps for 60% layout |
+| Through-Hole 1N4148 Diodes | 100 Pack | $5 | https://www.amazon.com/McIgIcM-1n4148-switching-Standard-Through/dp/B06XB1R2NK | One diode for each switch |
+| EC11 Rotary Encoder | 1 | $4.34 | https://www.aliexpress.us/item/3256808424331150.html?spm=a2g0o.productlist.main.48.65d641b1GWHxdy&algo_pvid=ba007876-62a3-41b7-8454-62611fa57dda&algo_exp_id=ba007876-62a3-41b7-8454-62611fa57dda-12&pdp_ext_f=%7B%22order%22%3A%22305%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.93%212.81%21%21%212.93%212.81%21%402101c44f17806028099184168eb7e5%2112000045944331228%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895&curPageLogUid=tjh6TElq82AT&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008610645902%7C_p_origin_prod%3A#nav-specification | Volume/menu control |
+| Encoder Knob | 1 | $2.40 | https://www.aliexpress.us/item/2251832562966356.html?spm=a2g0o.productlist.main.3.392042f76DyAfX&algo_pvid=41c8eb02-a2f9-4420-8f49-74d86cede72a&algo_exp_id=41c8eb02-a2f9-4420-8f49-74d86cede72a-2&pdp_ext_f=%7B%22order%22%3A%22670%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.64%212.38%21%21%212.64%212.38%21%402101e2b017806031068403630e2994%2112000021682261949%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895&curPageLogUid=vA3sUZKXpXC9&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A32749281108%7C_p_origin_prod%3A | Knob for rotary encoder |
+| 0.91 inch OLED Display | 1 | $3-6 | https://www.aliexpress.us/item/3256808929993066.html?spm=a2g0o.productlist.main.2.23682d26h033Ve&algo_pvid=5ea56e96-57e1-4568-b5ce-c64f2339e404&algo_exp_id=5ea56e96-57e1-4568-b5ce-c64f2339e404-1&pdp_ext_f=%7B%22order%22%3A%227729%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005009116307818%22%2C%22orig_item_id%22%3A%221005012078120684%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%215.75%212.70%21%21%2138.76%2118.22%21%402101e80317806033085334820eb206%2112000047975696427%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895&curPageLogUid=9BzBnjXJpEsz&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009116307818%7C_p_origin_prod%3A1005012078120684 | Screen for the keyboard which will convey info |
+| SK6812 MINI-E RGB LEDs | 100 | $9 | https://www.amazon.com/casendy-Similar-WS2812B-Individually-Addressable/dp/B0H2MBGX7L/ref=sr_1_3?dib=eyJ2IjoiMSJ9._IPlSkRpwhlnvhXMh_UDGy-EYLF3WFudgq9UOSVrkaOa0oCebr4pvnjSlSDmgkdqfu2OvsDW3Fa9XUkPXPPOS4jqlSV33dnW3AL7tNPMaVyN9G4-agiX4UgqcCtrCmEbOitzFEE51qELDJgwjlx4o2yurFpiwyxn6cCtImolcGRdgZD6j905wgXkW2fMGrE-sXw1SitnbDGY9heVH9ztfx9XeK5otBTpW3JXVNv8WgrQ-IMED553fkepkSLWWyuYToDu5q-wXGlRP08Tprpm53QssrPib6nxdueKmeOjrck.GDwYUI4g_xQcm9GTdJpuyGrJnYD0YqXfoL16ZAdSuFI&dib_tag=se&keywords=SK6812+MINI-E+RGB+LEDs&qid=1780603479&refinements=p_36%3A-1100&rnid=1243644011&sr=8-3 | Per-key RGB lighting |
+| Stabilizers | 1 Kit | $18 | https://www.amazon.com/DUROCK-Stabilizers-Keyboard-Keycap-Mechanical/dp/B0B8ZJJSL7/ref=sims_dp_d_dex_ai_rank_model_1_d_v1_d_sccl_1_2/133-3799869-9193667?pd_rd_w=PDF7u&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=TBHQGPRNAQKPFF3QRRB7&pd_rd_wg=jdwh0&pd_rd_r=301f82a4-8824-4cd2-98de-324bc289f63b&pd_rd_i=B0B8ZJJSL7&th=1| For larger keys |
+| 3.7V LiPo Battery (2000mAh) | 1 | $8.06 | https://www.aliexpress.us/item/3256809404408618.html?spm=a2g0o.productlist.main.6.40eaBcopBcop6q&algo_pvid=ba59d140-b7aa-4809-bc56-f1675e9a68bd&algo_exp_id=ba59d140-b7aa-4809-bc56-f1675e9a68bd-5&pdp_ext_f=%7B%22order%22%3A%223940%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2121.22%218.06%21%21%21143.00%2154.34%21%402103212517806041516618574ea47f%2112000049557506745%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895&curPageLogUid=mMJ9q3qrU5dM&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009590723370%7C_p_origin_prod%3A | Wireless power |
+| Mini Slide Switch | 1 | $2.11 | https://www.aliexpress.us/item/2255800499168473.html?spm=a2g0o.productlist.main.1.6931586bWsaCYq&algo_pvid=04e20559-3de8-4dbf-9767-e85de42b07c8&algo_exp_id=04e20559-3de8-4dbf-9767-e85de42b07c8-0&pdp_ext_f=%7B%22order%22%3A%221279%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%212.16%212.11%21%21%212.16%212.11%21%40210318a717806043966076923ee0a2%2112000037044894568%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895&curPageLogUid=EqiaUYsZWDH7&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A4000685483225%7C_p_origin_prod%3A | power switch |
+| M3x16mm Screws | 10 | $2 | https://www.aliexpress.us/item/3256808659912540.html?spm=a2g0o.productlist.main.5.4d25uxYkuxYkqN&algo_pvid=2f2fbe20-8d95-47ad-86a1-8a631bf2c66d&algo_exp_id=2f2fbe20-8d95-47ad-86a1-8a631bf2c66d-4&pdp_ext_f=%7B%22order%22%3A%221042%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%211.72%211.58%21%21%211.72%211.58%21%402101eee917806050175334965ead88%2112000046926633436%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895%3BpisId%3A5000000207846401&curPageLogUid=qCsqIBWeMpNf&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008846227292%7C_p_origin_prod%3A | Case assembly |
+| M3x5x4mm Heat-Set Inserts | 20 | $2.07 | https://www.aliexpress.us/item/3256809968990771.html?gatewayAdapt=glo2usa | Threaded inserts for case |
+| 10x3mm Rubber Feet | 100 | $3.14 | https://www.aliexpress.us/item/3256802433818462.html?spm=a2g0o.productlist.main.1.6430oopboopbDt&algo_pvid=9b106ecb-617c-41f4-90af-cebdc82e6751&algo_exp_id=9b106ecb-617c-41f4-90af-cebdc82e6751-0&pdp_ext_f=%7B%22order%22%3A%221169%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%213.02%213.02%21%21%213.02%213.02%21%402103123917806054355101585eb4ed%2112000037723212213%21sea%21US%217011694572%21X%211%210%21n_tag%3A-29911%3Bd%3A13fd1fc5%3Bm03_new_user%3A-29895&curPageLogUid=OZztoRCipTNS&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005002620133214%7C_p_origin_prod%3A| Anti-slip feet |
+| Custom PCB (JLCPCB) | 1 Order | $TBD | https://jlcpcb.com | PCB manufacturing |
+| 3D Printed Case | 1 | DOESNT MATTER | Ill do it with mine | Custom enclosure design |
